@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+
+}
+
+.presentacion {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 80px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  background: #f8d4bb ;
+  text-align: center;
+  border: 10px solid #8f8f8f;
+}
+
+.presentacion.active {
+  display: flex;
+}
+
+.titulo {
+  color: #8f8f8f;
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  left: calc(20px + 3vw);
+  top: 15px;
+  position: fixed;
+}
+
+.logo {
+  margin: 30px auto 20px;
+  width: 500px;
+}
+
+.eslogan {
+  font-size: 40px;
+  color: #000;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.imagen-boceto {
+  width: 300px;
+  margin: 10px;
+  border: 2px solid #8f8f8f;
+}
+
+.link-final {
+  font-size: 1.5rem;
+  color: #000;
+  text-decoration: none;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.link-final:hover {
+  text-decoration: underline;
+
+}
+
+.botones {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+  z-index: 9999;
+}
+
+#btnAnterior,
+#btnSiguiente {
+  background-color: #8f8f8f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.mapa {
+  width: 100%;         /* Ajusta según cómo quieras que se vea */
+  max-width: 600px;   /* Límite máximo */
+  height: auto;       /* Mantiene proporción */
+  margin: 20px auto;  /* Espacio y centrado */
+  display: block;
+  border-radius: 8px; /* Opcional: esquinas redondeadas */
+}
+
+.imagenes-boceto {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* espacio entre imágenes */
+  margin-top: 20px;
+  flex-wrap: wrap; /* por si en pantallas chicas no entran en fila */
+}
+
+.wireframe-img {
+  width: 300px; /* podés ajustar el tamaño si querés más grandes o más chicas */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.paleta {
+display: flex;
+
+}
+
+.paleta li{
+display: flex;
+list-style: none;
+width: 150px;
+border: #000 solid 2px;
+height: 190%;
+align-items: center;
+justify-content: center;
+}
+
+
+.paleta li:nth-child(1){
+background: #FFFFFF;
+
+}
+.paleta li:nth-child(2){
+color: #FFF7F1;  
+background: #000000;
+
+}
+.paleta li:nth-child(3){
+background:#8f8f8f;
+
+}

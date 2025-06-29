@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>VIES - Presentación</title>
+  <!-- Estilo de pagina -->
+  <link rel="stylesheet" href="estilos.css" />
+  <!-- Logica de pagina -->
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+
+  <div class="presentacion active" id="placa1">
+    <h2 class="titulo">Mi sitio web</h2>
+    <img src="./img/VIES.png" alt="Logo de VIES" class="logo" />
+    <p class="eslogan">VISTIENDO SUEÑOS</p>
+  </div>
+
+  <div class="presentacion" id="placa2">
+    <h2 class="titulo">Diseño y fundamentación</h2>
+    <h3>Tipografía</h3>
+    <p>font-family: Arial, sans-serif</p>
+    <h3>Paleta de colores</h3>
+    <ul class="paleta">
+      <li>#FFFFFF</li>
+      <li>#000000</li>
+      <li>#8f8f8f</li>
+    </ul>
+  </div>
+
+  <div class="presentacion" id="placa3">
+    <h2 class="titulo">Mapa de navegación</h2>
+    <img src="./img/mapa.png" alt="mapa de navegación" class="mapa" />
+  </div>
+
+  <div class="presentacion" id="placa4">
+    <h2 class="titulo">Del boceto al desarrollo</h2>
+    <div class="imagenes-boceto">
+      <img src="./img/wireframe1.png" alt="wireframe1" class="wireframe-img" />
+      <img src="./img/wireframe2.png" alt="wireframe2" class="wireframe-img" />
+    </div>
+  </div>
+
+  <div class="presentacion" id="placa5">
+    <h2 class="titulo">Presupuesto</h2>
+
+    <table style="border-collapse: collapse; font-size: 18px; margin-top: 15px;">
+      <thead>
+        <tr style="background-color: #e0e0e0;">
+          <th style="border: 2px solid #8f8f8f; padding: 10px;">Concepto</th>
+          <th style="border: 2px solid #8f8f8f; padding: 10px;">Detalle</th>
+          <th style="border: 2px solid #8f8f8f; padding: 10px;">Costo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="border: 2px solid #8f8f8f; padding: 10px;">Dominio (.com.ar)</td>
+          <td style="border: 2px solid #8f8f8f; padding: 10px;">Registro anual (NIC Argentina)</td>
+          <td style="border: 2px solid #8f8f8f; padding: 10px;">$8.500,00/año</td>
+        </tr>
+        <tr>
+          <td style="border: 2px solid #8f8f8f; padding: 10px;">Hosting</td>
+          <td style="border: 2px solid #8f8f8f; padding: 10px;">Plan básico (Towebs)</td>
+          <td style="border: 2px solid #8f8f8f; padding: 10px;">
+            $3.499,01/mes<br>
+            o $37.789,26/año
+          </td>
+        </tr>
+        <tr>
+          <td style="border: 2px solid #8f8f8f; padding: 10px;">Publicación del sitio</td>
+          <td style="border: 2px solid #8f8f8f; padding: 10px;">Autogestionada</td>
+          <td style="border: 2px solid #8f8f8f; padding: 10px;">$0</td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <p style="font-size: 20px; font-weight: bold; margin-top: 20px;">Total aproximado anual: $46.289,26</p>
+  </div>
+
+  <div class="presentacion" id="placa6">
+    <h2 class="titulo">Sitio responsive</h2>
+
+    <!-- Email marketing embebido -->
+    <div
+      style="margin:auto; max-width:90%; background-color:#D9D9D9; padding:20px; font-family:Arial, sans-serif; border-radius:10px;">
+      <div style="text-align:center;">
+        <img src="./img/VIES.png" alt="VIES" width="80" style="margin-bottom: 20px;">
+        <h3 style="font-size:16px; color:#333333; margin-top:0;">VISITÁ NUESTRO SITIO</h3>
+        <p style="font-size:14px; color:#333333;">Compra y vende cabello natural de manera fácil y segura</p>
+      </div>
+      <div style="display:flex;  justify-content:center; gap:calc(18.301vw / 250 * 20); margin-top:20px;">
+
+        <!-- Columna 1 -->
+        <div style="width: calc(18.301vw); text-align:center; display: flex; justify-content: space-between; flex-direction: column;">
+          <img src="./img/img1.jpg" alt="Extensiones" style="width: calc(18.301vw); height: calc(18.301vw / 250 * 309);border-radius:8px;">
+          <p style="font-size:14px; color:#333333; margin:10px 0;">¡Tu cabello tiene valor, usalo a tu favor!</p>
+          <a href="https://quemibarrios.github.io/VIES/" target="_blank"
+            style="background-color:#000000; color:#ffffff; text-decoration:none; padding:10px 20px; display:inline-block; border-radius:5px; font-size: calc(10px + 0.5vw);">CONTÁCTANOS</a>
+        </div>
+
+        <!-- Columna 2 -->
+        <div style="width: calc(18.301vw); text-align:center; display: flex; justify-content: space-between; flex-direction: column;">
+          <img src="./img/img2.jpg" alt="Extensiones" style="width: calc(18.301vw); height: calc(18.301vw / 250 * 309); border-radius:8px;">
+          <p style="font-size:14px; color:#333333; margin:10px 0;">¡Transformá tu look hoy mismo!</p>
+          <a href="https://quemibarrios.github.io/VIES/" target="_blank"
+            style="background-color:#000000; color:#ffffff; text-decoration:none; padding:10px 20px; display:inline-block; border-radius:5px; font-size: calc(10px + 0.5vw);">IR
+            AL SITIO</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="botones">
+    <button id="btnAnterior" style="display:none;">Anterior</button>
+    <button id="btnSiguiente">Siguiente</button>
+  </div>
+
+</body>
+
+</html>
